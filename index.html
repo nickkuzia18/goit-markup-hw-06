@@ -378,6 +378,18 @@
                     </li>
                 </ul>
             </div>
+            <div class="subscribe-wrap">
+                <h4 class="subscribe-title title">Subscribe</h4>
+                <form class="subscribe-form">
+                    <label for="user-email"></label>
+                    <input class="user-email-input" type="email" name="user-email" id="user-email" placeholder="E-mail">
+                    <button type="submit" class="subscribe-btn">Subscribe
+                        <svg class="send-icon" width="24" height="24">
+                            <use href="/images/icons.svg#icon-send-icon"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -387,6 +399,53 @@
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="modal-inputs">
+                    <div class="modal-field">
+                        <lable class="modal-lable" for="uxer-order-name">Name</lable>
+                        <div class="input-wrap">
+                            <input class="modal-name modal-input" type="text" name="user-order-name"
+                                id="user-order-name" />
+                            <svg class="modal-icon" width="18" height="18">
+                                <use href="/images/icons.svg#icon-person-modal-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <lable class="modal-lable" for="user-order-tel">Phone</lable>
+                        <div class="input-wrap">
+                            <input class="modal-tel modal-input" type="tel" name="user-order-tel" id="user-order-tel" />
+                            <svg class="modal-icon" width="18" height="24">
+                                <use href="/images/icons.svg#icon-tel-modal-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <lable class="modal-lable" for="user-order-email">Email</lable>
+                        <div class="input-wrap">
+                            <input class="modal-email modal-input" type="email" name="user-order-email"
+                                id="user-order-email">
+                            <svg class="modal-icon" width="18" height="24">
+                                <use href="/images/icons.svg#icon-email-modal-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="modal-field">
+                        <label class="modal-lable" for="user-order-comment">Comment</label>
+                        <textarea class="modal-textarea" placeholder="Text input" name="user-order-comment"
+                            id="user-order-comment"></textarea>
+                    </div>
+                </div>
+                <div class="modal-check">
+                    <input class="input-check hidden" id="policy" type="checkbox" value="true" />
+                    <label class="check-text" for="policy">
+                        I accept the terms and conditions of the&nbsp;<a href="" class="policy-link link"
+                            target="_blank" rel="noreferrer noopener">Privacy Policy</a>
+                    </label>
+                </div>
+                <button class="modal-btn btn" type="submit">Send</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>

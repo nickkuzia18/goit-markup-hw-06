@@ -743,9 +743,9 @@ footer .container {
     left: 50%;
     transform: translate(-50%, -50%) rotate(1turn) scale(1);
     rotate: 3turn;
-    width: 408px;
-    min-height: 576px;
-    padding: 24px;
+    width: 360px;
+    /* min-height: 484px; */
+    padding: 72px 24px 24px 24px;
     background-color: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
@@ -760,13 +760,15 @@ footer .container {
 }
 
 .modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
     display: flex;
     width: 24px;
     height: 24px;
     justify-content: center;
     align-items: center;
     margin-left: auto;
-    margin-bottom: 24px;
     padding: 0;
     background-color: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -815,7 +817,8 @@ footer .container {
     width: 100%;
 }
 
-.modal-lable {
+.modal-label {
+    display: block;
     margin-bottom: 4px;
     font-size: 12px;
     line-height: 1.17;
@@ -865,6 +868,7 @@ footer .container {
 .modal-email {}
 
 .modal-textarea {
+    display: block;
     padding: 8px 16px;
     height: 120px;
     width: 100%;
@@ -946,7 +950,6 @@ footer .container {
     justify-content: center;
     padding: 16px 32px;
     margin: 0 auto;
-    gap: 10px;
     width: 169px;
     height: 56px;
     border: none;
